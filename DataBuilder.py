@@ -28,7 +28,7 @@ class DataBuilder:
                       "Furosemide","Metoprolol"]
         drug_amounts = ["500mg", "200mg", "600mg", "100mg", "50mg", "900mg"]
 
-        block_data = {'doctor' : random.choice(doctors),
+        block_data = {'doctor': random.choice(doctors),
                       'prescription_date': prescription_date,
                       'doctor_phone_numbers': random.choice(doctor_phone_numbers),
                       'patient_names': random.choice(patient_names),
