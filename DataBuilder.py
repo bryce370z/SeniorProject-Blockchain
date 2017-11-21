@@ -10,6 +10,9 @@ class DataBuilder:
         self.data = self.build_data()
 
     def build_data(self):
+        """
+        Generated Randomized data for a block
+        """
 
         doctors = ["Dr. Nate Ambrose", "Dr. Damon Bradley", "Dr. Ethan Carter", "Dr. Courtney Ellis", "Dr. Arthur Jackson"
                   , "Dr. Gwen Pennington", "Dr. Lillian Price", "Dr. Dan Prince", "Dr. Raleigh Stewart", "Dr. Ana Syphax", "Dr. Ben Turner"
@@ -39,5 +42,3 @@ class DataBuilder:
         json_block_data = json.dumps(block_data, indent=4)
 
         return json_block_data
-
-
