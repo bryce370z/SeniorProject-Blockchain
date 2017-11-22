@@ -14,9 +14,14 @@ class Pharmacy:
 
     def print_chain(self):
         """
-        prints blockchain
+        decrypts blockchain
         """
+        password = "TzEQeLNDR~*r4<=L"
+        key = hashlib.sha256(password).digest()
+
         for block in self.BlockChain:
+            decryptor = AES.new(key, AES.MODE_CBC, IV=block.nonce)
+            plain = decryptor.decrypt(block.data)
             print(block.header)
-            print(block.data)
+            print(plain)
             print("hash: " + block.hash + "\n")
