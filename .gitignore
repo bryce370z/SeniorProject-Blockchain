@@ -102,3 +102,6 @@ ENV/
 
 #weird files that showed up
 .idea/
+
+# csv output file
+output.csv
