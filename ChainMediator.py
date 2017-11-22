@@ -13,11 +13,18 @@ class ChainMediator:
                 new_block: new block to be appended to blockchain
         """
         for sub in self.Subscribers:
+<<<<<<< HEAD
             if(self.validate_chain(sub.BlockChain)):
                 self.GoodChain.append(new_block)
                 sub.BlockChain.append(new_block)
             else:
                 sub.BlockChain = self.GoodChain
+=======
+            sub.BlockChain.append(new_block)
+            if(self.validate_chain(sub.BlockChain)):
+                self.GoodChain.append(new_block)
+                
+>>>>>>> 455e7cd4ff59a2159224295547e806edf5bbccd3
     """
     TODO: add function that validates chain. Test validation after each block is added, by verifying
     that all BlockChains for all subscribers are not corrupted, after the addition of the block.
