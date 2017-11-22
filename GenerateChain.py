@@ -88,7 +88,7 @@ def main():
             Corrupt the blockchain
             """
             doctor.BlockChain[1].timestamp = str(date.datetime.now())
-            pharmacy.BlockCsshain[1].timestamp = str(date.datetime.now())
+            pharmacy.BlockChain[1].timestamp = str(date.datetime.now())
             print("Blockchain corrupted.")
 
         elif decision == "5":
