@@ -2,11 +2,6 @@ import hashlib as hasher
 
 
 class Block:
-    index = None
-    timestamp = None
-    header = None
-    data = None
-    previous_hash = None
 
     def __init__(self, index, timestamp, header, data, previous_hash):
         self.index = index
@@ -23,4 +18,3 @@ class Block:
                             str(self.data).encode('utf-8') +
                             str(self.previous_hash).encode('utf-8'))
         return sha.hexdigest()
-    
