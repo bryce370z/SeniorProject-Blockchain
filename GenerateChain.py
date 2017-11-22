@@ -5,6 +5,7 @@ from CsvBuilder import CsvBuilder
 from Pharmacy import Pharmacy
 from Doctor import Doctor
 from ChainMediator import ChainMediator
+import sys
 
 def genesis_block():
     """
@@ -86,8 +87,8 @@ def main():
             """
             Corrupt the blockchain
             """
-            doctor.Blockchain[1].timestamp = str(date.datetime.now())
-            pharmacy.Blockchain[1].timestamp = str(date.datetime.now())
+            doctor.BlockChain[1].timestamp = str(date.datetime.now())
+            pharmacy.BlockCsshain[1].timestamp = str(date.datetime.now())
             print("Blockchain corrupted.")
 
         elif decision == "5":
