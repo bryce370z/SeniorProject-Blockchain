@@ -49,11 +49,11 @@ def main():
         print("[3] Pharmacist: Fill a prescription (decrypted)")
         print("[4] Corrupt the blockchain")
         print("[5] Validate the blockchain")
+        print("[6] Output blockchain to CSV")
         print("[quit] exit program")
 
         decision = str(input(""))
         if (decision == "quit"):
-            cb.write_to_csv()
             sys.exit()
         elif (decision == "1"):
             """
@@ -109,6 +109,10 @@ def main():
             if(i == len(cm.Subscribers)):
                 print("Blockchain validated.")
 
+
+        elif (decision == "6"):
+            cb.write_to_csv()
+            print("Output complete.")
         else:
             print("Please enter one of the valid options.")
 
