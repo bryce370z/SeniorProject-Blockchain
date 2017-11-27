@@ -14,7 +14,9 @@ class DataBuilder:
         Generated Randomized data for a block
         """
 
-
+        doctors = ["Dr. Nate Ambrose", "Dr. Damon Bradley", "Dr. Ethan Carter", "Dr. Courtney Ellis", "Dr. Arthur Jackson"
+                  , "Dr. Gwen Pennington", "Dr. Lillian Price", "Dr. Dan Prince", "Dr. Raleigh Stewart", "Dr. Ana Syphax", "Dr. Ben Turner"
+                  , "Dr. Geoffrey Weiss", "Dr. Wesley Williams"]
 
         prescription_date = str(datetime.datetime.now())
 
@@ -24,7 +26,7 @@ class DataBuilder:
         patient_names = ["Mario Speedwagon", "Petey Cruiser", "Anna Sthesia", "Paul Molive", "Anna Mull", "Gail Forcewind"
                         ,"Paige Turner", "Bob Frapples", "Walter Melon", "Nick R.Bocker", "Barb Ackue", "Buck Kinnear"
                         ,"Greta Life", "Ira Membrit", "Shonda Leer"]
-        drug_names = ["Atorvastatin Calcium","Levothyroxine","Lisinopril","Omeprazole","Metformin","Amlodipine",
+        drug_names = ["Atorvastatin Calcium","LevotDhyroxine","Lisinopril","Omeprazole","Metformin","Amlodipine",
                       "Simvastatin","Hydrocodone","Metoprolol ER","Losartan","Azithromycin","Zolpidem","Hydrochlorothiazide",
                       "Furosemide","Metoprolol"]
         drug_amounts = ["500mg", "200mg", "600mg", "100mg", "50mg", "900mg"]
